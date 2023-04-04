@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe "Sessions", type: :request do
@@ -10,5 +9,6 @@ RSpec.describe "Sessions", type: :request do
       json = JSON.parse response.body
       expect(json['jwt']).to be_a(String)
     end
+    
   end
 end
