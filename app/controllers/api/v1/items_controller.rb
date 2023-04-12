@@ -5,6 +5,12 @@ class Api::V1::ItemsController < ApplicationController
     items = Item.where({user_id: current_user_id})
       .where({created_at: params[:created_after]..params[:created_before]})
       .page(params[:page])
+    initValue = {expenses:0, income:0}
+    summary = items.inject(initValue){ |result,item|
+      result[item.kind.to_sym] += item.amount
+      result
+    }
+    summary[:balance] = summary[:income] - summary[:expenses]
     render json: { resources: items, pager: {
       page: params[:page] || 1,
       per_page: Item.default_per_page,
