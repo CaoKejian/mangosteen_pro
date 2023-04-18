@@ -28,10 +28,10 @@ resource "账目" do
 
   post "/api/v1/items" do
     authentication :basic, :auth
-    parameter :amount, '金额（单位：分）', required: true
-    parameter :kind, '类型', required: true, enum: ['expenses', 'income']
-    parameter :happen_at, '发生时间', required: true
-    parameter :tag_ids, '标签列表（只传ID）', required: true
+    parameter :amount, "金额（单位：分）", required: true
+    parameter :kind, "类型", required: true, enum: ["expenses", "income"]
+    parameter :happen_at, "发生时间", required: true
+    parameter :tag_ids, "标签列表（只传ID）", required: true
     with_options :scope => :resource do
       response_field :id
       response_field :amount
@@ -40,18 +40,19 @@ resource "账目" do
       response_field :tag_ids
     end
     let(:amount) { 9900 }
-    let(:kind) { 'expenses' }
+    let(:kind) { "expenses" }
+    let(:happen_at) { "2020-10-30T00:00:00+08:00" }
     let(:tags) { (0..1).map { create :tag, user: current_user } }
-    let(:tags) { (0..1).map{Tag.create name: 'x', sign:'x', user_id: current_user.id} }
     let(:tag_ids) { tags.map(&:id) }
-    let(:happen_at) { '2020-10-30T00:00:00+08:00' }
+    let(:happen_at) { "2020-10-30T00:00:00+08:00" }
     example "创建账目" do
       do_request
       expect(status).to eq 200
       json = JSON.parse response_body
-      expect(json['resource']['amount']).to eq amount
+      expect(json["resource"]["amount"]).to eq amount
     end
   end
+
 
   get "/api/v1/items/summary" do
     authentication :basic, :auth
