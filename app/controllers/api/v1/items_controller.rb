@@ -4,8 +4,8 @@ class Api::V1::ItemsController < ApplicationController
     return head :unauthorized if current_user_id.nil?
     items = Item.where( user_id: current_user_id )
       .where( happen_at: params[:happen_after]..params[:happen_before])
-      .where(kind: params[:kind])
-      .page(params[:page])
+     items = items.where(kind: params[:kind]) unless params[:kind].blank?
+      items=items.page(params[:page])
     initValue = { expenses: 0, income: 0 }
     summary = items.inject(initValue) { |result, item|
       result[item.kind.to_sym] += item.amount
@@ -20,7 +20,7 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   def create
-    item = Item.new params.permit(:amount, :happen_at, tag_ids: [])
+    item = Item.new params.permit(:amount, :happen_at, :kind, tag_ids: [])
     item.user_id = request.env["current_user_id"]
     if item.save
       render json: { resource: item }
