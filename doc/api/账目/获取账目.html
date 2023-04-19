@@ -179,18 +179,18 @@ table th, table td {
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozOTksImV4cCI6MTY4MTg3ODgzM30.KFgjoaF7dvn4SBYQcrZ1ZTxStz1iM7ABFGc4UW5UNT0
+            <pre class="request headers">Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0OTQsImV4cCI6MTY4MTg4MTM1Mn0.tqfDqbVJ5Izh6C1V8KUJkZEXWeCgWUWvzxNa_XrgU_o
 Accept: application/json
 Content-Type: application/json
 Host: example.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/items?created_after=2023-04-09+10%3A33%3A53+%2B0800&amp;created_before=2023-04-29+10%3A33%3A53+%2B0800</pre>
+          <pre class="request route highlight">GET /api/v1/items?created_after=2023-04-09+11%3A15%3A52+%2B0800&amp;created_before=2023-04-29+11%3A15%3A52+%2B0800</pre>
 
             <h4>Query Parameters</h4>
-            <pre class="request query_parameters highlight">created_after: 2023-04-09 10:33:53 +0800
-created_before: 2023-04-29 10:33:53 +0800</pre>
+            <pre class="request query_parameters highlight">created_after: 2023-04-09 11:15:52 +0800
+created_before: 2023-04-29 11:15:52 +0800</pre>
 
 
 
@@ -204,10 +204,10 @@ X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
 Content-Type: application/json; charset=utf-8
 Vary: Accept
-ETag: W/&quot;3e3bc313a860a74ef1991f4877e77dfa&quot;
+ETag: W/&quot;9092400577e6eed25e310aca7e312cb4&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 6fc39c5a-ca7f-4c84-a672-62d5e1487d16
-X-Runtime: 0.056214
+X-Request-Id: b88d0c97-b6a9-4ea3-b513-30bae94046c7
+X-Runtime: 0.048738
 Content-Length: 10159</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
@@ -215,651 +215,651 @@ Content-Length: 10159</pre>
               <pre class="response body">{
   &quot;resources&quot;: [
     {
-      &quot;id&quot;: 622,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 3893,
+      &quot;id&quot;: 775,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 9471,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.173Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.173Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 776,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 4097,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.177Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.177Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 777,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 6092,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.181Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.181Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 778,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 4258,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.097Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.097Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.187Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.187Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 623,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 1778,
+      &quot;id&quot;: 779,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 7988,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.101Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.101Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.191Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.191Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 624,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 1580,
+      &quot;id&quot;: 780,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 7290,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.105Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.105Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 625,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 9763,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.110Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.110Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 626,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 2621,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.114Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.114Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 627,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 6603,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.118Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.118Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.195Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.195Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 628,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 4538,
+      &quot;id&quot;: 781,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 5716,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.122Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.122Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 629,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 8492,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.125Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.125Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.200Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.200Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 630,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 7607,
+      &quot;id&quot;: 782,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 2252,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.129Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.129Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 631,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 4538,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.133Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.133Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 632,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 2473,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.138Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.138Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.204Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.204Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 633,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 2217,
+      &quot;id&quot;: 783,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 5132,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.143Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.143Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 634,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 2453,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.147Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.147Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.209Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.209Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 635,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 3039,
+      &quot;id&quot;: 784,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 8544,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.153Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.153Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.213Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.213Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 636,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 1279,
+      &quot;id&quot;: 785,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 5654,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.217Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.217Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 786,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 7959,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.222Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.222Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 787,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 1060,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.158Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.158Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.226Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.226Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 637,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 3424,
+      &quot;id&quot;: 788,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 9132,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.162Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.162Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.230Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.230Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 638,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 9444,
+      &quot;id&quot;: 789,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 5123,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.235Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.235Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 790,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 4829,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.239Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.239Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 791,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 3932,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.243Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.243Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 792,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 4504,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.166Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.166Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.247Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.247Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 639,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 4578,
+      &quot;id&quot;: 793,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 2550,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.251Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.251Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 794,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 1282,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
+      ],
+      &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.256Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.256Z&quot;,
+      &quot;kind&quot;: &quot;expenses&quot;,
+      &quot;deleted_at&quot;: null,
+      &quot;tags&quot;: [
+        {
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
+          &quot;deleted_at&quot;: null,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;kind&quot;: &quot;expenses&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: 795,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 8860,
+      &quot;note&quot;: null,
+      &quot;tag_ids&quot;: [
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.170Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.170Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.259Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.259Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 640,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 7203,
+      &quot;id&quot;: 796,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 8869,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.174Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.174Z&quot;,
+      &quot;happen_at&quot;: &quot;2023-04-17T00:00:00.000Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.264Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.264Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 641,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 9675,
+      &quot;id&quot;: 797,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 6950,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.179Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.179Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 642,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 9005,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.183Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.183Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.267Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.267Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 643,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 7993,
+      &quot;id&quot;: 798,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 7601,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.187Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.187Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.272Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.272Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]
     },
     {
-      &quot;id&quot;: 644,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 7696,
+      &quot;id&quot;: 799,
+      &quot;user_id&quot;: 494,
+      &quot;amount&quot;: 6777,
       &quot;note&quot;: null,
       &quot;tag_ids&quot;: [
-        1068
+        1311
       ],
       &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.192Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.192Z&quot;,
+      &quot;created_at&quot;: &quot;2023-04-19T03:15:52.276Z&quot;,
+      &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.276Z&quot;,
       &quot;kind&quot;: &quot;expenses&quot;,
       &quot;deleted_at&quot;: null,
       &quot;tags&quot;: [
         {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
+          &quot;id&quot;: 1311,
+          &quot;user_id&quot;: 494,
+          &quot;name&quot;: &quot;Qui o.&quot;,
+          &quot;sign&quot;: &quot;😡&quot;,
           &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 645,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 9577,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-19T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.196Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.196Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;kind&quot;: &quot;expenses&quot;
-        }
-      ]
-    },
-    {
-      &quot;id&quot;: 646,
-      &quot;user_id&quot;: 399,
-      &quot;amount&quot;: 3299,
-      &quot;note&quot;: null,
-      &quot;tag_ids&quot;: [
-        1068
-      ],
-      &quot;happen_at&quot;: &quot;2023-04-18T00:00:00.000Z&quot;,
-      &quot;created_at&quot;: &quot;2023-04-19T02:33:53.202Z&quot;,
-      &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.202Z&quot;,
-      &quot;kind&quot;: &quot;expenses&quot;,
-      &quot;deleted_at&quot;: null,
-      &quot;tags&quot;: [
-        {
-          &quot;id&quot;: 1068,
-          &quot;user_id&quot;: 399,
-          &quot;name&quot;: &quot;Hic i.&quot;,
-          &quot;sign&quot;: &quot;😀&quot;,
-          &quot;deleted_at&quot;: null,
-          &quot;created_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
-          &quot;updated_at&quot;: &quot;2023-04-19T02:33:53.079Z&quot;,
+          &quot;created_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
+          &quot;updated_at&quot;: &quot;2023-04-19T03:15:52.154Z&quot;,
           &quot;kind&quot;: &quot;expenses&quot;
         }
       ]

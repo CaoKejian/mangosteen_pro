@@ -4,13 +4,13 @@ zh-CN:
     errors:
       messages:
         invalid: 格式不正确
-        blank:必填
-        not_fount:找不到对应记录
+        blank: 必填
+        not_fount: 找不到对应记录
       models:
-      item:
+        item:
           attributes:
             amount:
-              other_than:金额不能为零
+              other_than: 金额不能为零
         validation_code:
           attributes:
             email:
