@@ -79,8 +79,7 @@ cd -
 docker run -d -p 8080:80 \
            --network=network1 \
            --name=$nginx_container_name \
-           #82-85
-                -v /home/$user/deploys/$version/nginx.default.conf:/etc/nginx/conf.d/default.conf \
+           -v /home/$user/deploys/$version/nginx.default.conf:/etc/nginx/conf.d/default.conf \
            -v /home/$user/deploys/$version/dist:/usr/share/nginx/html \
            -v /home/$user/deploys/$version/api:/usr/share/nginx/html/apidoc \
            nginx:latest
