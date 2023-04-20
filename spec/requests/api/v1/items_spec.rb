@@ -115,7 +115,7 @@ RSpec.describe "Items", type: :request do
     end
   end
   describe "统计数据" do
-    it "按天分组" do
+     it "按天分组" do
       user = create :user
       create :item, amount: 100, kind: "expenses", happen_at: "2018-06-18T00:00:00+08:00", user: user
       create :item, amount: 200, kind: "expenses", happen_at: "2018-06-18T00:00:00+08:00", user: user
@@ -131,6 +131,7 @@ RSpec.describe "Items", type: :request do
                                    }, headers: user.generate_auth_header
       expect(response).to have_http_status 200
       json = JSON.parse response.body
+      p json  
       expect(json["groups"].size).to eq 3
       expect(json["groups"][0]["happen_at"]).to eq "2018-06-18"
       expect(json["groups"][0]["amount"]).to eq 300

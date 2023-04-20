@@ -6,17 +6,11 @@ class Api::V1::ItemsController < ApplicationController
       .where(happen_at: params[:happen_after]..params[:happen_before])
     items = items.where(kind: params[:kind]) unless params[:kind].blank?
     items = items.page(params[:page])
-    initValue = { expenses: 0, income: 0 }
-    summary = items.inject(initValue) { |result, item|
-      result[item.kind.to_sym] += item.amount
-      result
-    }
-    summary[:balance] = summary[:income] - summary[:expenses]
     render json: { resources: items, pager: {
-             page: params[:page] || 1,
-             per_page: Item.default_per_page,
-             count: Item.count,
-           } }, methods: :tags
+      page: params[:page] || 1,
+      per_page: Item.default_per_page,
+      count: Item.count,
+    }}, methods: :tags
   end
 
   def create
@@ -29,13 +23,32 @@ class Api::V1::ItemsController < ApplicationController
     end
   end
 
+  def balance
+    current_user_id = request.env["current_user_id"]
+    return head :unauthorized if current_user_id.nil?
+    items = Item.where({ user_id: current_user_id })
+      .where({ happen_at: params[:happen_after]..params[:happen_before] })
+    income_items = []
+    expenses_items = []
+    items.each {|item|
+      if item.kind === 'income'
+        income_items << item
+      else
+        expenses_items << item
+      end
+    }
+    income = income_items.sum(&:amount)
+    expenses = expenses_items.sum(&:amount)
+    render json: { income: income, expenses: expenses, balance: income - expenses }
+  end
+
   def summary
     hash = Hash.new
     items = Item
       .where(user_id: request.env["current_user_id"])
       .where(kind: params[:kind])
       .where(happen_at: params[:happened_after]..params[:happened_before])
-      tags = []
+    tags = []
     items.each do |item|
       tags += item.tags
       if params[:group_by] == "happen_at"
@@ -51,12 +64,12 @@ class Api::V1::ItemsController < ApplicationController
       end
     end
     groups = hash
-    .map { |key, value| {
-      "#{params[:group_by]}": key,
-      tag: tags.find {|tag| tag.id == key },
-      amount: value
+      .map { |key, value| {
+        "#{params[:group_by]}": key,
+        tag: tags.find {|tag| tag.id == key },
+        amount: value
+      }
     }
-  }
     if params[:group_by] == "happen_at"
       groups.sort! { |a, b| a[:happen_at] <=> b[:happen_at] }
     elsif params[:group_by] == "tag_id"
@@ -66,24 +79,5 @@ class Api::V1::ItemsController < ApplicationController
       groups: groups,
       total: items.sum(:amount),
     }
-  end
-
-  def balance
-    current_user_id = request.env["current_user_id"]
-    return head :unauthorized if current_user_id.nil?
-    items = Item.where({ user_id: current_user_id })
-      .where({ happen_at: params[:happen_after]..params[:happen_before] })
-    income_items = []
-    expenses_items = []
-    items.each { |item|
-      if item.kind === "income"
-        income_items << item
-      else
-        expenses_items << item
-      end
-    }
-    income = income_items.sum(&:amount)
-    expenses = expenses_items.sum(&:amount)
-    render json: { income: income, expenses: expenses, balance: income - expenses }
   end
 end
