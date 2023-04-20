@@ -3,14 +3,16 @@ class Api::V1::ItemsController < ApplicationController
     current_user_id = request.env["current_user_id"]
     return head :unauthorized if current_user_id.nil?
     items = Item.where(user_id: current_user_id)
-      .where(happen_at: params[:happen_after]..params[:happen_before])
+      .where(
+        happen_at: (datetime_with_zone(params[:happen_after])..datetime_with_zone(params[:happen_before])),
+      )
     items = items.where(kind: params[:kind]) unless params[:kind].blank?
     items = items.page(params[:page])
     render json: { resources: items, pager: {
       page: params[:page] || 1,
       per_page: Item.default_per_page,
       count: items.count,
-    }}, methods: :tags
+    } }, methods: :tags
   end
 
   def create
@@ -30,8 +32,8 @@ class Api::V1::ItemsController < ApplicationController
       .where({ happen_at: params[:happen_after]..params[:happen_before] })
     income_items = []
     expenses_items = []
-    items.each {|item|
-      if item.kind === 'income'
+    items.each { |item|
+      if item.kind === "income"
         income_items << item
       else
         expenses_items << item
@@ -64,10 +66,11 @@ class Api::V1::ItemsController < ApplicationController
       end
     end
     groups = hash
-      .map { |key, value| {
+      .map { |key, value|
+      {
         "#{params[:group_by]}": key,
-        tag: tags.find {|tag| tag.id == key },
-        amount: value
+        tag: tags.find { |tag| tag.id == key },
+        amount: value,
       }
     }
     if params[:group_by] == "happen_at"
