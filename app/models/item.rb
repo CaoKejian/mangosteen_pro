@@ -1,6 +1,6 @@
 class Item < ApplicationRecord
   paginates_per 25
-
+  default_scope { where(deleted_at: nil).order(happen_at: :desc) }
   enum kind: { expenses: 1, income: 2 }
   validates :amount, presence: true
   validates :kind, presence: true
@@ -10,7 +10,7 @@ class Item < ApplicationRecord
   belongs_to :user
 
   validate :check_tag_ids_belong_to_user
-
+  alias_attribute :happen_at, :happened_at
   def check_tag_ids_belong_to_user
     all_tag_ids = Tag.where(user_id: self.user_id).map(&:id)
     if self.tag_ids & all_tag_ids != self.tag_ids
@@ -20,7 +20,7 @@ class Item < ApplicationRecord
   def tags
     Tag.where(id: tag_ids)
   end
-  def self.default_scope
-    where(deleted_at: nil)
+   def serializable_hash(options = {})
+    super(options.merge(methods: [:happen_at], include: [:tags]))
   end
 end

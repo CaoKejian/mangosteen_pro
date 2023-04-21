@@ -71,7 +71,6 @@ if [ "$(docker ps -aq -f name=^${nginx_container_name}$)" ]; then
 fi
 
 title 'doc: docker run'
-#cd 这几行
 cd /home/$user/deploys/$version
 mkdir ./dist
 tar xf dist.tar.gz --directory=./dist

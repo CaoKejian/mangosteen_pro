@@ -12,17 +12,15 @@ gemfile_lock=$current_dir/../Gemfile.lock
 vendor_dir=$current_dir/../vendor
 vendor_1=rspec_api_documentation
 api_dir=$current_dir/../doc/api
-#这一行
 frontend_dir=$cache_dir/frontend
 
 function title {
-  echo 
+  echo
   echo "###############################################################################"
   echo "## $1"
-  echo "###############################################################################" 
-  echo 
+  echo "###############################################################################"
+  echo
 }
-
 
 title '运行测试用例'
 rspec || exit 1
@@ -35,7 +33,6 @@ title "打包本地依赖 ${vendor_1}"
 bundle cache --quiet
 tar -cz -f "$vendor_dir/cache.tar.gz" -C ./vendor cache
 tar -cz -f "$vendor_dir/$vendor_1.tar.gz" -C ./vendor $vendor_1
-#打包前端代码
 title '打包前端代码'
 mkdir -p $frontend_dir
 rm -rf $frontend_dir/repo
@@ -53,13 +50,11 @@ scp -r $vendor_dir/cache.tar.gz $user@$ip:$deploy_dir/vendor/
 yes | rm $vendor_dir/cache.tar.gz
 scp -r $vendor_dir/$vendor_1.tar.gz $user@$ip:$deploy_dir/vendor/
 yes | rm $vendor_dir/$vendor_1.tar.gz
-#上传前端代码
 title '上传前端代码'
 scp "$frontend_dir/dist.tar.gz" $user@$ip:$deploy_dir/
 yes | rm -rf $frontend_dir
 title '上传 Dockerfile'
 scp $current_dir/../config/host.Dockerfile $user@$ip:$deploy_dir/Dockerfile
-#这一行
 scp $current_dir/../config/nginx.default.conf $user@$ip:$deploy_dir/
 title '上传 setup 脚本'
 scp $current_dir/setup_remote.sh $user@$ip:$deploy_dir/
